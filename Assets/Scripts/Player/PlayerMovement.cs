@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (harvesting)
         {
-            rigidbody.velocity = Vector2.zero;
+            rigidbody.linearVelocity = Vector2.zero;
         }
         else
         {
@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 normVector = normVector.normalized;
             }
-            rigidbody.velocity = new Vector2(normVector.x * movementSpeed,normVector.y * movementSpeed);
+            rigidbody.linearVelocity = new Vector2(normVector.x * movementSpeed,normVector.y * movementSpeed);
         }
     }
 
@@ -65,6 +65,12 @@ public class PlayerMovement : MonoBehaviour
         harvesting = true;
         timer = Time.time + time;
     }
+
+    public Vector2 GetVelocity()
+    {
+        return rigidbody.linearVelocity;
+    }
+
 
     public bool IsHarvesting()
     {
