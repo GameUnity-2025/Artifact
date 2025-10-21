@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 6060242505385302418}
   - component: {fileID: 6060242505385302419}
   - component: {fileID: 1348870525080491595}
+  - component: {fileID: -6335239306167495202}
   m_Layer: 12
   m_Name: wolf
   m_TagString: Untagged
@@ -134,15 +135,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6060242505385302408}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.99, y: -2.27, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.00007439841, y: -0.9999256, z: -0.008726221, w: 0.008524548}
+  m_LocalPosition: {x: 2.3987, y: -1.9515, z: -0.010336324}
+  m_LocalScale: {x: 3.02263, y: 2.1391156, z: -1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6060242505721527790}
   - {fileID: 2831196818176362532}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -1, y: -179.023, z: 0}
 --- !u!212 &6060242505385302409
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -187,7 +188,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1320481435402747707, guid: 493ecbbe410c1f14a8600a0000fa85c4,
+  m_Sprite: {fileID: -750047184722822154, guid: 607abf857897a354ba58cc58dfecf5fc,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -242,14 +243,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6060242505385302408}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7df453e0af9a1b74cb6db66b4d5fcba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: -2895821608431225175, guid: b2a9f4fb99943dd4083be084ee374fd0, type: 3}
-  - {fileID: -4045114995007804087, guid: b6daa6c831b54944aaf487fbe7a5a67e, type: 3}
+  - {fileID: 6233496440514900867, guid: 607abf857897a354ba58cc58dfecf5fc, type: 3}
+  - {fileID: 6185124051430620655, guid: 607abf857897a354ba58cc58dfecf5fc, type: 3}
+  - {fileID: -6243590176172294242, guid: 607abf857897a354ba58cc58dfecf5fc, type: 3}
+  - {fileID: -187061038009810156, guid: 607abf857897a354ba58cc58dfecf5fc, type: 3}
   time: 0.15
 --- !u!114 &6060242505385302418
 MonoBehaviour:
@@ -304,7 +307,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.22, y: 1.52}
+    oldSize: {x: 0.45, y: 0.56}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -322,7 +325,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 10a8b79de3baaa04b932c4ee53e92e09, type: 3}
   m_Resource: {fileID: 8300000, guid: 10a8b79de3baaa04b932c4ee53e92e09, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
@@ -333,7 +336,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 2.8032773
+  MinDistance: 2.782596
   MaxDistance: 6.036845
   Pan2D: 0
   rolloffMode: 1
@@ -409,6 +412,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-6335239306167495202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6060242505385302408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e41fae4af68b484491174fe1acd8c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleSprite: {fileID: 8445469178646879675, guid: 607abf857897a354ba58cc58dfecf5fc,
+    type: 3}
+  moveSprites:
+  - {fileID: 6233496440514900867, guid: 607abf857897a354ba58cc58dfecf5fc, type: 3}
+  - {fileID: 6185124051430620655, guid: 607abf857897a354ba58cc58dfecf5fc, type: 3}
+  - {fileID: -6243590176172294242, guid: 607abf857897a354ba58cc58dfecf5fc, type: 3}
+  - {fileID: -6243590176172294242, guid: 607abf857897a354ba58cc58dfecf5fc, type: 3}
+  attackSprites:
+  - {fileID: 4072241969498346569, guid: 607abf857897a354ba58cc58dfecf5fc, type: 3}
+  - {fileID: 3687449107416671509, guid: 607abf857897a354ba58cc58dfecf5fc, type: 3}
+  - {fileID: 2483782727947890954, guid: 607abf857897a354ba58cc58dfecf5fc, type: 3}
+  - {fileID: -643843233168925960, guid: 607abf857897a354ba58cc58dfecf5fc, type: 3}
+  eatSprites: []
+  moveFrameTime: 0.15
+  attackFrameTime: 0.2
+  eatFrameTime: 0.15
 --- !u!1 &6060242505721527777
 GameObject:
   m_ObjectHideFlags: 0

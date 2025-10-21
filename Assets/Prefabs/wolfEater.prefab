@@ -115,10 +115,10 @@ GameObject:
   - component: {fileID: 8011127346797358246}
   - component: {fileID: 7480885676737421912}
   - component: {fileID: 8011127346797358264}
-  - component: {fileID: 8011127346797358266}
   - component: {fileID: 8011127346797358269}
   - component: {fileID: 8011127346797358268}
   - component: {fileID: 362997636}
+  - component: {fileID: 8248871178217037788}
   m_Layer: 12
   m_Name: wolfEater
   m_TagString: Untagged
@@ -135,8 +135,8 @@ Transform:
   m_GameObject: {fileID: 8011127346797358247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.99, y: -2.27, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.2735, y: -1.9578, z: 0}
+  m_LocalScale: {x: 2.5321665, y: 3.0141668, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8011127348607961281}
@@ -187,7 +187,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5156008581485975930, guid: 23a51fbc73fed34449f711944e7a0fe5,
+  m_Sprite: {fileID: -8804577451312863447, guid: 6e68adc5b3a998344b2a1d057982f965,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -235,22 +235,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   max: 60
   current: 0
---- !u!114 &8011127346797358266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8011127346797358247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7df453e0af9a1b74cb6db66b4d5fcba3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 8841236677986759360, guid: 0a26d3f1d3192e44b883d1c860e90c6c, type: 3}
-  - {fileID: 6750992308001965499, guid: 20e6bef81dd5da14d86a0f6448fd1be0, type: 3}
-  time: 0.2
 --- !u!114 &8011127346797358269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,7 +288,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.64, y: 1.64}
+    oldSize: {x: 0.37, y: 0.31}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -322,7 +306,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 10a8b79de3baaa04b932c4ee53e92e09, type: 3}
   m_Resource: {fileID: 8300000, guid: 10a8b79de3baaa04b932c4ee53e92e09, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
@@ -409,6 +393,41 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8248871178217037788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8011127346797358247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e41fae4af68b484491174fe1acd8c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleSprite: {fileID: 2294633204174513064, guid: 6e68adc5b3a998344b2a1d057982f965,
+    type: 3}
+  moveSprites:
+  - {fileID: -1148362564002726747, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  - {fileID: -1202396436292935338, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  - {fileID: -6309155646296237868, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  - {fileID: -8630077547763592464, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  - {fileID: 8828395637555187138, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  attackSprites:
+  - {fileID: -1927809215821552941, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  - {fileID: -3074926159877256613, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  - {fileID: -8189142574560365079, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  - {fileID: -8189142574560365079, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  - {fileID: 5389232431511811324, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  eatSprites:
+  - {fileID: -8770818236958866315, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  - {fileID: -4829220664459573023, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  - {fileID: -3074926159877256613, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  - {fileID: -8189142574560365079, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  - {fileID: 7437584850889283984, guid: 6e68adc5b3a998344b2a1d057982f965, type: 3}
+  moveFrameTime: 0.15
+  attackFrameTime: 0
+  eatFrameTime: 0.4
 --- !u!1 &8011127348607961294
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,8 +455,8 @@ Transform:
   m_GameObject: {fileID: 8011127348607961294}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.549, z: 0}
-  m_LocalScale: {x: 1, y: 0.1, z: 1}
+  m_LocalPosition: {x: 0.063, y: 0.331, z: 0}
+  m_LocalScale: {x: 0.7567, y: 0.06729, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8011127346797358265}
