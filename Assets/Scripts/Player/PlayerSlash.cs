@@ -32,7 +32,7 @@ public class PlayerSlash : MonoBehaviour
     void Slash()
     {
         Instantiate(slashPrefab, transform.position, transform.rotation);
-        Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, new Vector2(2,1.5f), pivot.rotation.z, enemyMask);
+        Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, new Vector2(1,1.5f), pivot.rotation.z, enemyMask);
         if(hits.Length != 0)
         {
             foreach(Collider2D hit in hits)
