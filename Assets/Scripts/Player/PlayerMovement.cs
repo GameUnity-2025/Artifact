@@ -66,6 +66,12 @@ public class PlayerMovement : MonoBehaviour
         timer = Time.time + time;
     }
 
+    public Vector2 GetVelocity()
+    {
+        return rigidbody.linearVelocity;
+    }
+
+
     public bool IsHarvesting()
     {
         return harvesting;
